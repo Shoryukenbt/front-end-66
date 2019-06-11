@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+.basicinfos li,.contacts li{
+    float: left;
+    margin-right: 20px;
+}
+.basicinfos::after,.contacts::after{
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.basicinfos li p,.contacts li p{
+    display: inline-block;
+    margin-left: 20px;
+}
+li span {
+    font-weight: bold;
+}
