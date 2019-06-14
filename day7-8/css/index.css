@@ -1,0 +1,95 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin: 0;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+}
+.app_header {
+    background-color: #333;
+    color: #fff;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+.app_header--container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.app_header--container .logo {
+    float: left;
+    line-height: 50px;
+}
+.app_header--container nav {
+    float: right;
+}
+.app_header--container nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.app_header--container nav ul li a{
+    color: #fff;
+}
+.app_banner--pics::after {
+    content: '';
+    display: block;
+    height: 400px;
+    visibility: hidden;
+}
+.app_banner,.app_banner--pics{
+    position: relative;
+}
+.app_banner .app_banner--pics li {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background: greenyellow;
+}
+.app_banner--pages {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.app_banner--pages li {
+    padding: 0.25em;
+    display: inline-block;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.app_banner--pages li.active {
+    background: #333;
+    color: #fff;
+}
+.app_content {
+    margin-top: 20px;
+}
+.app_content--tages {
+    padding: 0 120px;
+    border-bottom: 1px solid rgb(129, 126, 126);
+}
+.app_content--tages li{
+    display: inline-block;
+    width: 80px;
+    line-height: 45px;
+    border: 1px solid rgb(129, 126, 126);
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #333;
+    cursor: pointer;
+}
+.app_content--tages li.active {
+    position: relative;
+    top: 1px;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
