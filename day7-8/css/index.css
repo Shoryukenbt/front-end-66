@@ -11,6 +11,7 @@ html,body {
     padding: 0;
 }
 .app_header {
+    position: sticky;
     background-color: #333;
     color: #fff;
 }
@@ -103,16 +104,17 @@ footer {
     margin: 5px;
     border: 1px solid #333;
     flex-grow: 1;
+    text-align: center;
 }
 .flexable-3 {
-    flex: 3;
+    flex: 3 300px;
 }
 .flexable-3_5 {
-    flex: 3.5;
+    flex: 3.5 400px;
 }
 .flexable-2_5 {
-    flex: 2.5;
+    flex: 2.5 200px;
 }
 .flexable-3_3 {
-    flex: 3.3;
+    flex: 3.3 350px;
 }
