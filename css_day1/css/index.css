@@ -1,0 +1,39 @@
+p {
+    margin: 0;
+}
+.container {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.title {
+    width: 80px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: all 1s;
+}
+.active {
+    color: blue;
+    transition: all 1s;
+}
+.title+div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    text-align: center;    
+}
+.title+div div{
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background: blue;
+    transition: width 1s ease-out;
+}
+.active+div div{
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+    background: blue;
+    /* transition: width 1s ease-out; */
+}
